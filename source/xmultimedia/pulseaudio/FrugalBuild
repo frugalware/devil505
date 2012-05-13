@@ -3,7 +3,7 @@
 
 pkgname=pulseaudio
 pkgver=2.0
-pkgrel=1
+pkgrel=2
 pkgdesc="PulseAudio is a sound server with an advanced plugin system"
 url="http://pulseaudio.org/"
 depends=('speex' 'liboil' 'audiofile' 'libsndfile' 'libtool' 'libatomic_ops' 'libsamplerate' 'flac' 'glib2' \
@@ -58,7 +58,6 @@ build() {
 	Fcd
 	Fpatchall
  	Fautoreconf
-	libtoolize --copy --force --install || Fdie
         Fmake || Fdie
 	Fmakeinstall
 
