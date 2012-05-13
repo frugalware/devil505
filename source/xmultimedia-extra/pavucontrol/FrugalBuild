@@ -3,10 +3,10 @@
 
 pkgname=pavucontrol
 pkgver=1.0
-pkgrel=2
+pkgrel=3
 pkgdesc="PulseAudio Volume Control"
 url="http://0pointer.de/lennart/projects/pavucontrol/"
-depends=('pulseaudio>=1.1' 'gtkmm' 'libcanberra-gtk')
+depends=('pulseaudio>=2.0' 'gtkmm' 'libcanberra-gtk')
 makedepends=('intltool')
 groups=('xmultimedia-extra')
 archs=('i686' 'x86_64')
