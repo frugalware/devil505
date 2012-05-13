@@ -2,8 +2,8 @@
 # Maintainer: bouleetbil <bouleetbil@frogdev.info>
 
 pkgname=pulseaudio
-pkgver=1.1
-pkgrel=11
+pkgver=2.0
+pkgrel=1
 pkgdesc="PulseAudio is a sound server with an advanced plugin system"
 url="http://pulseaudio.org/"
 depends=('speex' 'liboil' 'audiofile' 'libsndfile' 'libtool' 'libatomic_ops' 'libsamplerate' 'flac' 'glib2' \
@@ -19,7 +19,7 @@ archs=('i686' 'x86_64')
 up2date="Flasttar http://freedesktop.org/software/$pkgname/releases/"
 source=(http://freedesktop.org/software/$pkgname/releases/$pkgname-$pkgver.tar.gz \
 	README.Frugalware)
-sha1sums=('acfd86b40f9574e419d33f1dbaef7e172a6b6011' \
+sha1sums=('60fcc87a97312d2862e2fd1e068b21581f9294dd' \
           '2a29c451c32e7335831067d3cc0d7bb4f5e7460e')
 
 subpkgs=("libpulse" "pulseaudio-esd" "pulseaudio-bluetooth" "pulseaudio-x11" \
