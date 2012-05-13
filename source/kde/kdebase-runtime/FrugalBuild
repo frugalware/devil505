@@ -2,7 +2,7 @@
 # Maintainer: centuri0 <achevaux at gmail dot com>
 
 pkgname=kdebase-runtime
-pkgrel=2
+pkgrel=3
 pkgdesc="Programs and libraries needed at runtime by other KDE4 applications"
 groups=('kde')
 archs=('i686' 'x86_64')
@@ -44,7 +44,7 @@ subreplaces=("${subreplaces[@]}" "")
 subgroups=("${subgroups[@]}" "kde kde-core kde-runtime")
 subarchs=("${subarchs[@]}" "i686 x86_64")
 
-makedepends=("${makedepends[@]}" "phonon-backend-gstreamer" "phonon-backend-vlc" "pulseaudio>=1.1")
+makedepends=("${makedepends[@]}" "phonon-backend-gstreamer" "phonon-backend-vlc" "pulseaudio>=2.0")
 subpkgs=("${subpkgs[@]}" "$pkgname-kcontrol")
 subdescs=("${subdescs[@]}" "Runtime Files for Kcontrol.")
 subdepends=("${subdepends[@]}" "strigi>=0.7.2 libqtnetwork>=$Qt4 libqtxml>=$Qt4 xfsprogs-acl libqtsvg>=$Qt4 libsm libxtst libxcursor
