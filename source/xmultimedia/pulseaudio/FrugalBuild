@@ -3,7 +3,7 @@
 
 pkgname=pulseaudio
 pkgver=2.0
-pkgrel=2
+pkgrel=3
 pkgdesc="PulseAudio is a sound server with an advanced plugin system"
 url="http://pulseaudio.org/"
 depends=('speex' 'liboil' 'audiofile' 'libsndfile' 'libtool' 'libatomic_ops' 'libsamplerate' 'flac' 'glib2' \
@@ -53,6 +53,8 @@ Fconfopts="$Fconfopts --disable-hal \
 install=$pkgname.install
 backup=(etc/pulse/daemon.conf \
 	etc/pulse/default.pa etc/pulse/system.pa)
+
+unset MAKEFLAGS
 
 build() {
 	Fcd
